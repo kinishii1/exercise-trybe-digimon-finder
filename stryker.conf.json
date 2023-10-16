@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/pages/Search.tsx",
+    "src/components/Digimon.tsx"
+  ],
+  "mutator": {
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "BlockStatement",
+      "EqualityOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator",
+      "StringLiteral"
+    ]
+  },
+  "commandRunner": {
+    "command": "CI=true npm test"
+  },
+  "timeoutMS": 20000,
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off"
+}
