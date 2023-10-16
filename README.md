@@ -2,6 +2,9 @@
 
 ---
 
+## Resultado
+![](https://github.com/kinishii1/exercise-trybe-digimon-finder/blob/main/Capturar.PNG)
+
 # Orientações
 
 <details>
